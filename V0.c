@@ -57,7 +57,7 @@ int main()
         }
         if (strcmp(commande, "INSCRIRE") == 0)
         {
-            scanf("%s %s", &prenom, &nom);
+            scanf(" %s %s", &prenom, &nom);
             validite=test_validite_inscrire(liste_participant, prenom, nom,nombre_participants);
             if (validite) {
                 ++nombre_participants;
